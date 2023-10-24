@@ -61,4 +61,14 @@ public class Estado {
         }
         return total / this.cidades.size();
     }
+
+    public void mostrarTodasCidades() {
+        for (Cidade cidade : this.cidades) {
+            System.out.println("--------------------------------");
+            System.out.println("Nome: " + cidade.getNome());
+            System.out.println("População: " + cidade.getPopulacao());
+            System.out.println("Clima: " + cidade.getClima());
+            System.out.println("Área: " + cidade.getArea());
+        }
+    }
 }
